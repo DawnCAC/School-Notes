@@ -1,0 +1,72 @@
+Notes with Teacher
+
+* Watch for the welcome email
+* Make a reading plan for the 16 sections
+* This looks to be in python
+* Average is 4 or 5 weeks for this course
+* Send an email to teacher if there is something I really do not understand
+* Use the study guide to help with knowing what to study.
+* Watch course chatter for any student notes on this class.
+* The class reviews structures and the commands to come with them
+
+Course Plan
+___________
+Section 1: Getting started
+	1.1-1.5: 7/13/21
+Section 2: Introduction to Python 3
+	2.1-2.6: 7/14/21 - 7/15/21
+	2.7-2.12: 7/15/21 - 7/16/21
+Section 3: ADTs and Algorithms
+	3.1-3.7: 7/17/21
+Section 4: Types, Variables, & Expressions
+	4.1-4.5: 7/18/21-7/19/21
+	4.6-4.10: 7/20/21
+Section 5: Branches and Loops
+	5.1-5.5: 7/21/21-7/22/21
+	5.6-5.10: 7/23/21-7/24/21
+After I finish this section look at my planning and plan out the rest.
+Section 6: Functions
+Section 7: Classes
+Section 8: Lists and Dictionaries
+Section 9: Recursion
+Section 10: Algorithm Analysis
+Section 11: Searching and Sorting Algorithms
+Section 12: Lists, Stacks, and Queues
+Section 13: Hash Tables
+Section 14: Trees
+Section 15: Heaps
+Section 16: Final Steps
+
+Chapter 1: Getting Started
+1.1
+	* Covers fundamentals of dynamic data structures
+	* Python software is the bases
+	* Covers object-oriented design and abstract data types as a design paradigm
+1.2
+	* Python Code Commenting Style Requirements
+	* For inline comments use # and a space, then add your comment 
+	* # and a space can be used for multi-line comments by putting them at the front of each line
+	* Last is using 3 quote marks “”” on each side of the quote.  These are usually for describing what a piece of code does.
+	* Use a style guide to help guide your code style
+
+
+1.4
+Pacing guide
+	Week 1: Chapters 2-4
+	Week 2: Chapters 5-7
+	Week 3: Chapters 8-10
+	Week 4: Chapters 11 & 12
+	Week 5: Chapters 13-15
+	Week 6: Pre assessment, study, and Objective assessment
+Look at this for figuring out my chapters.
+
+1.5 Learning Objectives Content Map (Coaching Guide)
+	Use this to make sure I know everything on here
+
+
+
+Chapter 2: Introduction to Python 3
+  2.1 Programming Introduction
+	* 
+
+
