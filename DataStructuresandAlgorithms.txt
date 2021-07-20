@@ -37,12 +37,37 @@ Section 14: Trees
 Section 15: Heaps
 Section 16: Final Steps
 
+Live EVENT 7/18/21: Implementation of Stack ADT Based Upon a Python List
+	* IDE: Integrated Developement Environment
+	* Stack is an abstract data type
+		- Lists in python are used to make a stack
+		- Alter and transfore the lists operations
+	* Operations for a stack: Push and pop
+	* Last one in the stack is the first item out.
+	* Push puts an item on the stack as long as the stack is not full, it amends it to the list
+	* Pop removes an item from the stack as long as the stack is not empty, will take the item out of the list
+	* Stacks full and empty is defined at the type of the program
+	* Peek lets you look at the top item in the stack
+	* Object oriented stack
+		- The init sents all of the values for a stack
+		- def __init__(self, size = 10):
+			self.S_Size = size
+			self.S_Empty = 0
+			self.S = ()
+		- getCapacity will let you know how big the stack currently is.
+	* Abstract data type can be any type of real world object that is being modeled.  These types are showing real world data types.
+	* Need to make sure I can really understand the data algorithms and algorithms because it will help really know how to program.  Learn as much as I can.
+	* Taxominy: 
+	* I have python installed and go to the course in the lists, stacks, and queues, understand python stacks and queues.  Copy the implementation into python and play with it.
+	* I may want to pull all the python code as I go and try to play with it and see how it works.
+	* Breaking things is not a bad thing it will help learn.
+
 Chapter 1: Getting Started
-1.1
+  1.1
 	* Covers fundamentals of dynamic data structures
 	* Python software is the bases
 	* Covers object-oriented design and abstract data types as a design paradigm
-1.2
+  1.2
 	* Python Code Commenting Style Requirements
 	* For inline comments use # and a space, then add your comment 
 	* # and a space can be used for multi-line comments by putting them at the front of each line
@@ -50,15 +75,15 @@ Chapter 1: Getting Started
 	* Use a style guide to help guide your code style
 
 
-1.4
-Pacing guide
+  1.4
+  Pacing guide
 	Week 1: Chapters 2-4
 	Week 2: Chapters 5-7
 	Week 3: Chapters 8-10
 	Week 4: Chapters 11 & 12
 	Week 5: Chapters 13-15
 	Week 6: Pre assessment, study, and Objective assessment
-Look at this for figuring out my chapters.
+  Look at this for figuring out my chapters.
 
 1.5 Learning Objectives Content Map (Coaching Guide)
 	Use this to make sure I know everything on here
@@ -67,6 +92,38 @@ Look at this for figuring out my chapters.
 
 Chapter 2: Introduction to Python 3
   2.1 Programming Introduction
+	* Computer Program consists of instructions that a computer executes like instructions used to execute a recipe
+  2.2 Computational Thinking
+	* Task Decomposition means to reduce the complex task into simpler basic steps to make everything easier to solve.
+	* Computational thinking: creating an algorithm to solve a problem by evaluating the problems most basic parts
+  2.3 The Python Interactive Interpreter
+	* Interactive Interpreter: Program that allows the user to execute one line of code at a time.
+		- Code is a common word for textual representation of a program
+		- Line is a row of text
+		- Prompt is displayed and indicates the interpreter is ready to accept code.  In python it is >>> for the prompt
+  2.4 Programming in Python
+	* Programmer can write a python code file and provide the file to the interpreter.  This allows the program to not have to be typed in line by line each time.
+		- Statement: Program instruction
+		- Expressions: code that return a value when evealuated
+		- Print(): displays variables or expression values
+		- '#' denotes comments
+  2.5 Basic Output
+	* Primary way to print an output is using print()
+	* End= : keeps the next print's output on the same line separated by a single space
+	* Using commas between items to print will print them in a line seperated by spaces Example: wage = 20 Print ('Wage:',wage) = Wage: 20
+	* \n is a newline character.  It will seperate out things into seperate lines
+	* 
+  2.6 Basic Input
+	* input() is used for a user to enter a value.  input waits for the user to insert something and hit enter key
+	* inputs are strings normally
+	* sting and integer values are considered types
+  2.7 Errors
+	* Syntax error: violate a programming language's rules on how symbols can be combined to create a program
+		- Error message will include the line around where the error is
+	* It is good practice to write a little bit of code at a time and run it.  This will help lessen the number of stacking errors
+	* Runtime error: program's sytax maybe correct but not all the coding maybe correct.  This may crash your program.
+	* Logix error: when the program has errors that will not crash the program but make the program not behave like it is suppose too.  Often called a bug.
+  2.9 Development Environment
 	* 
 
 
