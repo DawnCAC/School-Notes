@@ -144,5 +144,39 @@ Chapter 2: Introduction to Python 3
 
 Chapter 3: ADTs and Algorithms
   3.1 Introduction to Algorithms
+	* Algorithm: Describes a sequence of steps to do a calculation.
+	* Computational Problem: Input, question about input, and desired output
+	* Algorithm can be in english, pseudocode, programming language, etc.  The algorithm just has to precisely describe the computational procedure.
+	* NP-complete: problems for which no know efficient algorthm exists.  For this programmers need to focus on finding a good enough algorithm
+  3.2 Data Structures
+	* Data Structures: way of organizing and storing data.  It also makes it so operations can be performed on the data
+		- Record: stores subitems with an name for each
+		- Array: stores an ordered list of items.  Accessible by positional index
+		- Linked list: stores ordered list of items using nodes.  Has a pointer for the next node
+		- Binary tree: each node stores data and has up to 2 children, similar to a family tree
+		- Hash table: sotres unordered items by mapping the location in an array
+		- Heap: tree that maintains simple property that the node key is either greater thank or less than/equal to the node's childrens' keys.
+		    Either max-heap or min-heap
+		- Graph: representing connections among items.  vertex: item on graph.  Edge: connection between 2 vertices
+	* An array has to be shifted to add a new item while a linked list can add an item by updating the pointers
+  3.3 Relation Between Data Structures and Algorithms
+	* Review the Programing part of this section
+  3.4 Abstract Data Types
+	* Abstract data types (ADTs): predefined user operations
+	* Different underlying structures will require different algorithms be performed.
+	* Common Abstract data types: list, stack, queue, deque, bag, set, priority queue, dictionary(map)
+  3.5 List Abstract Data Type (ADT)
+	* List: holding ordered data
+  3.6 Queue Abstract Data Type (ADT)
+	* Queue: items are inserted at the end and remove from the front.  First in first out.
+	* Pop: Removes and returns the item in the from of the queue
+  3.7 Applications of ADTs
+	* Abstract: have users interact at a high level with an items but internal details are hidden.
+	* Underlying implemention needs to be known to make sure that the runtime is efficient
+	* ADTs in standard libraries: Python (list, set, dict, deque), C++ (vector, list, deque, queue, stack, set, map), Java (Collection, set, list, map, queue, deque)
+	* 
 
+Types, Variables, & Expressions
+  4.1 Objects and Variables
+	* 
 
