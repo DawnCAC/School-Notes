@@ -124,6 +124,25 @@ Chapter 2: Introduction to Python 3
 	* Runtime error: program's sytax maybe correct but not all the coding maybe correct.  This may crash your program.
 	* Logix error: when the program has errors that will not crash the program but make the program not behave like it is suppose too.  Often called a bug.
   2.9 Development Environment
-	* 
+	* IDE: Integrated Development Environment is used to develope code
+	* Python can be written in notepad as well.  You do not need an IDE for python
+  2.10 Computers and Programs
+	* Memory stores 0s and 1s or bits
+	* Program/Application/App: sequence of instructions that are designed by a programmer
+	* Program instructions written in 0s and 1s is machine instructions or machine code
+	* Assemblers are what translates human readable instructions into machine code
+  2.11 Computer Tour
+	* Computer was originally a person who did computations by hand from there it has advanced into tech that is called computers which include large computers
+	   and as small as a smart phone
+	* Parts of a computer: Input/output devices (screen/keyboard/mouse), Storage, Memory, Processor, clock
+	* Computers can now run multiple programs at a time
+  2.12 Language History
+	* Machine Language: made up of 0s and 1s and is the executable program with machine instructions
+	* Assembly Language: assemplers translate human readable instructions to machine language
+	* High-level languages: support programming using algorithms and formulas.  More closely related to how people think.  Need compilers
+	* Scripting language: executes programs without a compiler, they use an interpreter instead
+
+Chapter 3: ADTs and Algorithms
+  3.1 Introduction to Algorithms
 
 
