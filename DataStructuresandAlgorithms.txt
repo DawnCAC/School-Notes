@@ -178,5 +178,29 @@ Chapter 3: ADTs and Algorithms
 
 Types, Variables, & Expressions
   4.1 Objects and Variables
+	* An interpreter creates and manipulates objects as needed.
+	* Variable is used to remember a value for later use and is deleted after use
+  4.2 Assignments
+	* Variable name is what a programmer calls a variable.
+	* Assignment statement: assigns the name on the left and the value associated with that name on the right
+	* Name = expression (which can just be one item or it can be a calculation)
+	* Names can be reassigned to another object, they are not perminate
+	* In programming = means compute the value on the right and assign it to the left
+  4.3 More on Objects
+	* Python objects include: value, type (like integer or string), and identity (unique identifier that describes the object)
+	* Objects that are integers can be added or multipled but strings can not be.  Strings can be appended with additional text.  This is because type matters to a
+	   values behavior
+	* type() prints the type of object
+  4.4 Names
+ 	* Name is also called the identifier
+		- Sequence of letters and numbers and underscore.
+		- Must always start with a letter and an underscore is considered a letter in this case
+		- Double underscores should be avoided because python has special usages for this
+	* Python is case sensitive
+	* Reserved words, or key words, can not be used as names because they are part of the coding language
+	* Good practice is to use all lowercase when naming and use Underscores between words
+	* Names should be meaningful and have something to do with what it is being used for.  Like num_cars for the number of cars in the lot, etc
+	* While meaningful, names should not be particularly long either.
+4.5 Numeric Types: Floating-Point
 	* 
 
