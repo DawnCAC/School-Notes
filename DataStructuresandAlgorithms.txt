@@ -176,7 +176,7 @@ Chapter 3: ADTs and Algorithms
 	* ADTs in standard libraries: Python (list, set, dict, deque), C++ (vector, list, deque, queue, stack, set, map), Java (Collection, set, list, map, queue, deque)
 	* 
 
-Types, Variables, & Expressions
+Chapter 4: Types, Variables, & Expressions
   4.1 Objects and Variables
 	* An interpreter creates and manipulates objects as needed.
 	* Variable is used to remember a value for later use and is deleted after use
@@ -201,6 +201,78 @@ Types, Variables, & Expressions
 	* Good practice is to use all lowercase when naming and use Underscores between words
 	* Names should be meaningful and have something to do with what it is being used for.  Like num_cars for the number of cars in the lot, etc
 	* While meaningful, names should not be particularly long either.
-4.5 Numeric Types: Floating-Point
+  4.5 Numeric Types: Floating-Point
+	* Floating points are a type of decimal/fraction
+	* When needing things to be floating points a decimal has to be used in the programing
+	* Floating point literal using scientific notation using e before the exponent so those calculations can be used.
+	* overflow error happens when the value is too large to be stored into memory.  Max: 1.8x10e308 and min: 2.3x10e-308.
+	* floating points are usually used for values that are measured such a volume or temp
+  4.6 Expressions
+	* Expression: combination of items for example variables and operators that evaluates to a value
+	* Literal: specific value in the code
+	* Expressions can be just a literal or variable or any compination of those and operators, just with no commas
+	* Operator: symbol to use for calculation.  Like + for addition
+	* Expressions must follow arithmetic rules
+	* Can not ommit operators like you can in math.  For example in math 5k is 5*k but in programming 5k is just 5k, if you want to multiple you have to have the *.
+	* No factoial operator exists in python
+	* // is used to divide if you do not want a floating point.  The remainder is just dropped instead of added as a decimal
+	* % or modulo is used to return just the remainder of a division
+	* If either value is a float then the result will be a float.  Division always returns a float
+  4.7 String Basics
+	* String: sequence of characters.  Like someones name
+	* String literal: string value specified in the source code.  Do so my suround the string with quotes single or double
+	* Sequence type: type that specifies a collection of objects ordered from left to right.
+	* Index: position of a character in the string
+	* len() is used to find the length of a string
+	* Use [index # you want] to access specific indexes
+	* Strings once made can not be modified.  To change the string you have to assign the string again with the modifications already changed
+	* 
+  4.8 Lists Basics
+	* Containers: contain references to other objects
+	* List: is a type of container. Use brackets to suround the sequence of variables
+	* List item is called an element
+	* Lists are ordered by the position in the list, they have an index #
+	* Lists can help reduce variables in a program
+	* Lists index must be an integer but can be negative
+	* Lists can be modified as needed by the programmer by using append() or pop() or remove()
+	* Sequence-type functions perform operations on lists and strings
+	* Tuple is an imuutable list.  It can not be modified once produced.  Uses () instead of []
+  4.9 Dictionary Basics
+	* Dictionary: is a container that describes associative relationships
+	* Key: is like the word cat from the english dictionary
+	* Value: describes some data associated with the key
+	* The object type is dict. and it is created by using braces {} the dictionary
+	* Multiple entries can be maded into the dictionary {entry 1: value, entry 2: value, etc}
+	* Dictionaries are used if you need to associate a key to a value in a list.  like a students name with their grade
+	* Dictionaries do not maintain an order and can be changed as necessary
+	* Insert by dict[key] = value, use the same thing to update as well, use the same key but add a different value.
+	* del dict[key of entry to be deleted]
+	* KeyError occurs if the key does not exist
+  4.10 Common Data Types Summary
+	* Numeric types: int and float
+	* Sequence types: string, list, and tuple
+	* Mapping type: dictionary
+
+Chapter 5: Branches and Loops
+  5.1 If-Else Statement
+	* If-else statements use branching to have the program execute either one group of statements or another
+	* I am already ok at if-else statements, did not take much notes here
+  5.2 Relational and Equality Operators
+	* Relational Operators: are like less than or greater than
+	* Equality Operators: are like equal to and not equal to
+	* Each evaluates to a boolean which is true or false
+	* Operator chaining is supported in python.  Chaining performs comparisons from left to right.
+	* Numbers are arithmetically compared.  Strings are compared by converting to ASCII
+  5.3 Multiple if-else
+	* Else if is used if you need to run multiple if else statements
+	* It is good practice to use for example <= instead of just less than
+  5.4 Boolean Operators and Expressions
+	* Boolean refers to a value that is true or false
+	* Boolean operator can combine multiple expressions
+	* Expression using boolean operators is known as a boolean expression
+	* boolean operators: and, or, not
+	* Use parentheses to make sure the order of operations is inacted correctly
+	* Relational operators such as == compute before logical operations like not
+  5.5 Membership Operators
 	* 
 
