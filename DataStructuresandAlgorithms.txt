@@ -274,5 +274,56 @@ Chapter 5: Branches and Loops
 	* Use parentheses to make sure the order of operations is inacted correctly
 	* Relational operators such as == compute before logical operations like not
   5.5 Membership Operators
+	* in and not in help to see if a specific value in found in a container.  It produces a true false responce
+	* Membership operators do not check each dictionary keys values
+	* is checks whether 2 operands are bound to a single object
+	* identity operator: determine whether 2 variables are the same object.  Uses is and is not
+	* Best practice is to not use identity operators enless absolutely needed
+  5.6 Code Blocks and Indentation
+	* Code Block: series of statements that are grouped together
+	* Code Blocks are indented after the first line to show that all those lines go together in the block
+	* This is kinda like how my notes are setup with the indentions.
+	* Standard indention is 4 spaces/columns per level of indention.  DO NOT USE TAB!
+	* Code that is so long that is has to wrap lines and should use parentheses to make sure it is classified as joined
+	* New code blocks can only begin after a statement that ends with a colon.
+  5.7 While Loops
+	* While loops: executes a block of code as long as the expression is true
+	* Loop body is what the loop executes on true
+	* Infinite loops are when a loop continues indefinately.  It is best to avoid such loops
+	* It is best in loops to use the greater than or less than sign with the equal not just use ==.
+	* In a loop if using just == it might blow right by without ever equaling the value
+  5.8 More While Examples
+	* No notes, it was just examples
+  5.9 For Loops
+	* For loops loops a specified number of times and can be used to print out everything in a list
+	* Reversed() can be used to loop the a sequence backwards
+  5.10 Counting Using the Range() Function
+	* Range() will generate a sequence of numbers based on the range indicated.  example range (10,13) gives 10 11 12.
+	* Range(start number, end before numer, number to count up by)
+Chapter 6: Functions
+  6.1 Function Basics
+	* Function: named series of statements
+	* Function call: invoking a function's name
+	* Function types: input(), int(), type(), etc
+	* New functions can be created using def keyword
+	* Fuctions consists: def keywork, fuction name, and a block of statements
+	* Return: when it gets to the return the program jumps back to the next statement after the function call
+	* Function names should be lowercase with underscores seperating words
+  6.2 Function Parameters
+	* Parameters: help to influence an functions behavior
+	* Parameters are normally in () when defining the function, multiple parameters are seperated by commas
+	* Parameters can not be an expression
+	* Function call paramters can be expressions
+  6.3 Returning Values from Functions
+	* Return statement can product one output value
+	* Function without a return statement returns none
+	* Hierarchial function calls or nested fuction calls are calls that happen inside another call
+  6.4 Dynamic Typing
+	* Any type of object can be passed into a function
+	* Polymorphism: behavior of the function depends on the argumement types
+	* Dynamic typing is used to determine the type of objects so the program will execute properly
+	* Static typing makes the programmer define each type of objects
+  6.5 Function with Branches/Loops
+	* Function blocks may include branches, loops, and other statements
+  6.6 Fimctopms are objects
 	* 
-
