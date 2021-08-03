@@ -320,10 +320,103 @@ Chapter 6: Functions
 	* Hierarchial function calls or nested fuction calls are calls that happen inside another call
   6.4 Dynamic Typing
 	* Any type of object can be passed into a function
+
 	* Polymorphism: behavior of the function depends on the argumement types
 	* Dynamic typing is used to determine the type of objects so the program will execute properly
 	* Static typing makes the programmer define each type of objects
   6.5 Function with Branches/Loops
 	* Function blocks may include branches, loops, and other statements
-  6.6 Fimctopms are objects
+  6.6 Functions are objects
+	* Functions have type, identity, and value
+	* Bytecode represents the statements to be excuteds by the function
+		- Low-level operation and one statement can contain multiple bytecodes
+		- Can consist of adding, subtracting or loading from memory
+	* Calling a function is the same is calling the item.  print_face() is the same as func = print_face
+	* Function objects don't support most operators
+	* You can use a function inside another function.  This can be used to pass the return value of one function into the second function
+  6.7 Scope of Variables and Functions
+	* Name of a variable or function object is not visable to the entire program.  This is know as the object's scope.
+		- Variable scope created inside a function is only seen inside the function.  It can not be used outside 
+		- These are called local variables
+		- Extends from the variable's assignment to the end of the function
+	* Variables defined outside the function can be used anywhere in the program.  They are called global variables
+	* Global statements are required to change a global variable inside a function.  Example: global employee_name is used inside the function
+	* Inside a function the local variable takes presidence over the global variable of the same name.  Makes the global variable unreachable
+	* Good practice, avoid non-constant global variables
+  6.8 Namespaces and Scope Resolution
+	* namespace: maps names to objects
+		- It is a normal python dictionary
+	* Scope: area of code where a name is visiable
+		- Built-in scope: built-in names of Python, examples: int(), str(), etc
+		- Global scope: globally defined names
+		- Local scope: scope within currently executing fuction.  Locally defined names
+	* Order of locating a name: Local scope first, then global, and last in built-in scope
+	* NameError is when a name is not found in any of those
+	* Scope resolution is the processes of searching for a name.
+	* Local namespace is removed at the end of the function
+  6.9 Function Arguments
+	* Pass by assignment: arguments are passed by object reference
+	* Objects are either immutable or mutable depending on if they can be changed
+	* To make sure a function does not change a immutable object at all, then a copy of said object is used.
+Chapter 7: Classes
+  7.1 Classes: Introduction
+	* Classes are a higher level view to make a programs smaller details make more sense
+	* Classes group related items
+  7.2 Classes: Grouping Data
+	* The object created by creating a class maintains a set of attributes.
+	* Attribute Reference Operator: can be accessed using
+	* Instantiation operation is performed by calling the class.  This creates an instance.
+	* For class names use the hump nameing method.  LunchMenu, CoinAmounts, etc
+	* Self: Method parameter for the class instance
+	* Instance: instantiation of a class
+	* __init__ : constructor method initializes a class instance.  Called automatically
+	* Class: group of related variables and functions
+	* Attribute: name following a "." symbol
+  7.3 Class Methods
+	* Method: function defined within a class
+	* Method object: an attribute of a class.  References using dot notation
+	* Special method name: method implements some special behavior of the class
+	* Special methods are identified by double underscores before and after an identifier
+	* Good practice:  Do not use double underscores for anything other then special methods
+	* When setting the first paramenter of a method it has to be (self) because it will throw an error otherwise
+  7.4 Class and Instance Object Types
+	* User defined classes contain 2 types of objects: class objects and instance objects
+		- Class object: creates instance objects
+		- Instance object is initialized by the __init__ method
+	* Initiating a class
+		- class Time:
+			def __init__(self):
+				self.hours = 0
+				self.minutes = 0
+	* To initiate an instance
+		time1 = Time()       ** first instance is set with the class
+		time1.hours = 5      ** first attribute for this instance and it is set
+		time1.minutes = 30   ** second attribute for this instance and it is set
+	* Same setup for other instances
+	* Class and instance objects are namespaces and are used to group data and functions together
+	* Class attribute: shared amongst all of the instances of that class.  They are also defined within the scope of the class
+	* Instance attribute can be unigue to each instance
+		- Instance attributes are created using dot notation when printing or calling the attribute
+  7.5 Class Constructors
+	* Class instances initialized to a specific state
+	* Additional parameters besides self can be added to a class constructor
+  7.6 Class Interfaces
+	* Class Interface: methods that programmers call to create, modify or access a class instance.
+		- print_time() and print_pace() are examples of methods used by a programmer to access the class instance
+	* Abstract data type (ADT): data type whoses creation and update are constrained to specific well-defined operations
+	* Abstraction helps users focus on higher level concepts by hiding a lot of the fiddly bits
+  7.7 Class Customization
+	* Class customization: process of identifying how a class should behave for some common operations
+		- Special method names are used to implement this
+		- They normally start and end with 2 underlines __
+	* Operator Overloading: redefining the functionality of built-in operators, in class instances
+  7.8 Memory Allocation and Garbage Collection
+	* Memory Allocation: Process of requesting and being granted memory
+	* The operating system must grant access to the application
+	* Garbage Collectiion: Objects are deallocated by python.  It can be deallocated when it does not reference any variables
+	* Reference count: integer counter that keep track of how many variables reference an object
+	* The Garbage collector deallocates objects that the reference count is 0 on
 	* 
+Chapter 8 Lists and Dictionaries
+  8.1 Lists
+	*
