@@ -419,4 +419,84 @@ Chapter 7: Classes
 	* 
 Chapter 8 Lists and Dictionaries
   8.1 Lists
+	* List: A container which groupes related objects together
+		- A list is sequenced
+		- Maintain a left-to-right ordering
+		- List elements are accessed using indexing operations.
+		- List elements have brackets around them
+	* List() function accepts a string, list or tuple and returns a new list object
+	* Index: integer corresponding to the elements location in the list.
+	* A list is Mutable and has the capability of in-place modification
+  8.2 Iterating Over a List
+	* List methods can be used to add and remove things from a list
+	* Enumerate(): Build in function. 
+
+Notes about posting
+	MyPC@DAWN-TOWER MINGW64 ~/desktop/GitProjects (main)
+	$ git add *
+
+	MyPC@DAWN-TOWER MINGW64 ~/desktop/GitProjects (main)
+	$ git commit -m "Notes added through Chapter 7.8"
+
+	MyPC@DAWN-TOWER MINGW64 ~/desktop/GitProjects (main)
+	$ git push -u origin
+
+  8.3 List Nesting
+	* List nesting: where a list is an element of another list.
+	* Multi-demensional data structure can be made using this like a 2D table.
+	* Nested for loops can be used to access elements of nested lists
+		- the outer loop goes through the rows (which is the elements of the main list)
+		- the inner loop goes through each list elements of the main list
+  8.4 List Slicing
+	* Slice notation: read multiple elements from a list
+	* This will make a new list with only the elements that were indicated.  The 1st # is the start and the End is End before here
+	* Stride: indicates how many elements are skipped between extracted items.
+		- This is if you want every other elements of the list
+  8.5 Loops Modifying Lists
+	* Common error for loops with lists is that people forget to use the position when writing the code.
+	* You must always have the position you are referencing and changing.
+	* When making modifications, especially deleting, it is better to use a copy of the list
+  8.6 List Comprehensions
+	* List comprehension: iterates over a list and modifies the entire list and returns the new list.
+	* New list name = [(i -/+ or what ever change) for i in my_list] is how you make changes
+	* List comprehension creates a new list, where for loops modify an existing list
+  8.7 Dictionaries
+	* Dictionary when it comes to python is another type of container object
+	* Dictionaries reference objects as key-value pairs.  Key : Value
+	* Dictionaires us the dict type
+	* Wrap in braces { } or us dict() function to create a dictionary
+	* Dictionaries are mutable
+  8.8 Dictionary Methods
+	* Dict method: function that operates specifically on the dict object
+	* These functions are clear, get, update, pop
+  8.9 Iterating Over a Dictionary
+	* Loops can be used to interate over a dictionary
+	* Hash is a key that helps the interpreter do fast look ups
+	* Dict.items() lists everything, dict.keys() lists only keys, and dict.values() lists only values
+  8.10 Dictionary Nesting
+	* Dictionaries like Lists can be nested.
+	* Data structure: method of organizing data
+Chapter 9 Recursion
+  9.1 Recursive Functions
+	* Recursive functions are when a function calls itself
+	* Recursive functions work well when needing to count down within a loop
+  9.2 Recursive Algorithm: Search
+	* Recursive algorithm can be used to do things like find numbers or names by calling the function until it is found
+  9.3 Adding Output Statements for Debugging
+	* While programming, programmers will use output statements to make sure the program is outputing correctly.
+	* When the output statement for debugging is not needed the programmers will comment them out
+  9.4 Creating a Recursive Function
+	* 2 steps for creating a recursive function
+		- Write a base case: returns a value without doing a recursive call
+		- Write a recursive case:
+	* Before writing a recursive fuction: 1. does it have a naturally recursive solution and 2. solution is better than a non recursive solution
+	* Recursive functions have to reach a base case so it does not go into infinite recursion
+  9.5 Recursive Math Functions
+	* The fibonacci sequence is a good option for using recursive functions
+	* The greatest common divisor can also be calculated using recursive functions
+	* Depth of recursion measures how many recursive calls have been made. 1000 being the depth limit
+  9.6 Recursive Exploration of All Possibilities
+	* Trees are used in recursive exploration
+Chapter 10 Algorithm Analysis
+  10.1 Constant Time Operations
 	*
