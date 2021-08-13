@@ -499,4 +499,123 @@ Chapter 9 Recursion
 	* Trees are used in recursive exploration
 Chapter 10 Algorithm Analysis
   10.1 Constant Time Operations
-	*
+	* Efficient algorithms aims to lower the time the algorithm runs while also doing what needs to be done
+	* Constant time operations always take the same amount of time to complete for a given processor
+	* Constant time operations seem to focus on fixed size data values and using mathmatical formulas (add, subtracting, and comparision)
+  10.2 Algorithm Efficiency
+	* Algorithm efficiency is measured by the computational complexity of the algorithm.
+	* You want to avoid using algorithms that have a lot of complexity and use a lot of resources
+	* Runtime Complexity is a function and does vary a little based on input data
+		- When using this for tests it is best to do the worse and best case scenarios to get a true look at what is going on
+	* Space complexity is a function and is representative of fixed-size memory units
+  10.3 Growth of Functions and Complexity
+	* Runtime complexity has a lower bound and an upper bound, which provides a general picture of runtime
+  10.4 O Notation
+	* Big O notation: mathematical way of describing how a function generally behaves
+	* Need to review this more.  Probably using other resources
+  10.5 Algorithm Analysis
+	* Run time analysis often focuses on worst case
+	* Will need to research this as well with more instruction
+	* In the Big O notation constants are omitted because they are not needed.  This includes precisely counting
+	* Runtime analysis for nested loops requires summing the runtime of the inner loop over each outer loop iteration.
+  10.6 Recursive Definitions
+	* Algorithm is a sequence of steps while a recursive algorithm breaks the problem into smaller problems and run the algorithm to solve those
+	* Recursive algorithms can not be endlessly divided into smaller problems, it muse have a base case
+		- This base case can be in the form of the if statement where the recursive algorithm can be in the form of the else statement
+	* Recursive Function: function that calls itself
+	* Base case does not work as an error checking.  A reverse list can still attempt to access the list out of bounds of the list.
+  10.7 Recursive Algorithms
+	* Fibonacci sequence: each number is the sum of the previous 2 numbers in the sequence.
+	* Recursive Algorithms can be used to calculate the fibonacci sequence
+	* Recursive binary search
+		- Algorithm that searches a sorted list for a key starting with the middle of the list and working middles and if the guessed number is high or low
+		- This narrows down the guesses until the correct key is found if it is there
+  10.8 Analysing the Time Complexity of Recursive Algorithms
+	* Recurrenct Relations
+		- Has a T on both sides of the equation
+	* More stuff I do not understand
+	* Recursion Trees
+		- Visual diagram of a operations done by a recursive function
+Chapter 11 Searching and Sorting Algorithms
+  11.1 Searching and Algorithms
+	* Linear search: algorithm that searches for a key from the beginning of the list until either it is found or the end is reached
+	* To find how long a search would take: time each item takes * the number of items(for max)/1 (for min)
+  11.2 Binary Search
+	* Binary Search is faster then Linear search and it checks the middle of the list and uses high and low to repeat until item is found or not found
+	* The maximum steps to figure out an item is not on the list using Binary search is 6
+  11.3 Python: Linear and Binary Search
+	* In the binary search you find the mid by adding the high and the low and dividing by 2.  the you either go high or low depending and do it again unti found.
+	* Binary searches need to have the list in order to be functional
+  11.4 Sorting Introduction
+	* Sorting: process of converting a list of elements into an order
+  11.5 Selection Sort
+	* Selection Sort: algorithm that treats input as 2 parts, sorted and unsorted.  Selects the proper next value to move from unsorted to sorted
+  11.6 Python: Selection Sort
+	* 
+
+Review After Pre-assessment
+  Garbage Collection
+	* Deleting unused Objects and Variables
+	* Things stay in memory as long as they are referenced or in scope.  If they are no longer reference or in scope they get deleted
+  Data Categories
+	* Lists
+		- General Purpose
+		- Most widely used data structure and can grow or shrink as needed
+		- Sequence type and is sortable
+	* Tuple
+		- Immutable: can not be changed which makes them usefor for fixed data
+		- They are normally faster than lists
+		- Also a sequence type
+	* Set
+		- Store non-duplicate items
+		- Very fast access compared to lists
+		- unordered
+		- Math Set ops: union and intersect, 
+	* Dict (Dictionary)
+		- Key/Value pairs
+		- Associative array
+		- Unordered
+	* These can hold any datatype
+	* Sequence
+		- Indexing: can asscess any item in the sequece using its indexes
+		- Slicing: slice out substrings, sublists, etc
+		- Adding and Concatenating using the + sign.  Multiplying can also be used
+		- Checking: using in or not in
+		- Iterating can me used as a for loop	
+		- Can find the minimum, maximum, and number of items
+		- Sorting: returns a new list of items in sorted order
+		- Index (item) will return the first occurrance of an item
+  Heap (Min)
+	* Heaps are a data tree format
+	* inserting into the heap is top to bottom left to right.  Example (5,3,5,9,1,45,8,3)
+		- 		5
+			    3	   5
+			 9   1   45  8
+		       3
+	* Heap uses bubble sorting, which compares a spot with its parent and if it is not in the right spot it will swap with its parent
+		- Example: the smallest value in the heap is always at the top of the heap.  So the number 1 with compare with its parent, the 3,
+			since one is smaller they will swap spots.  Then one will be compared to its new parent, number 5, and since 1 is smaller
+			then those will switch as well.  Now one is the smallest number and is at the top of the heap
+	* A min heap will make sure that the parents of each child is smaller then the child.  If the parent is larger then bubble sorting takes effect
+  Sorting
+	* Bubble sorting is comparing 2 numbers and pushing the largers number to the end while bringing the smallest number to the beginning
+		- This is done by comparing 2 numbers in an array and if the 1st number is bigger then the second number, they get swapped
+	* Quick sort using a pivot point to compare values to and sorts based on if they are higher or lower then pivot point.  
+		Then takes the high and low sections seperately to do the same thing until everthing is sorted.
+	* Insertion sort can use 2 arrays, an unsorted and a sorted array.  Then you go through the unsorted array and put it in the sorted array in order
+		- The big thing with insertion sort is that it will shift items to the right to open space for smaller items. 
+		- The value you are currently sorting you will put it into a value so we do not lose it, so we use a current value to put this in.
+		- Time for this best case is O(n) and worst case is O(n^2)
+	* Selection Sort searches for the minium value and puts it at the end of the sorted part of the list
+		- This has smaller swaps then doing a bubble sort
+  Data Structures and Algorithms
+	* Data structures: a data storage format that enables efficient access and modification
+	* Algorithms: unambiguous, finite, sequence of instrutions to solve a problem
+	* BigO notation: N is the input
+  Reviewing questions
+	* To figure out what the modulo (%) is you divide then you multiple by the whole number and subtract that from the larger number
+		-example: key%1009 number 2023.  Divide 2023/1009.  Then: Drop the decimal and take the 2 * 1009 = 2018.  Then take 2023-2018=5 which is the remainder
+	* Hash function is how you know what slot the data will be stored in
+	* 
+
+PASSED TEST
